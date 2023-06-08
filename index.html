@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Генератор паролей</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css'>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat&amp;display=swap'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+
+
+<!-- partial:index.partial.html -->
+<div class="container">
+	<h2 class="title">Генератор паролей</h2>
+	<div class="result">
+		<div class="result__title field-title">Сгенерировать пароль</div>
+		<div class="result__info right">копировать</div>
+		<div class="result__info left">скопировано</div>
+		<div class="result__viewbox" id="result">Нажмите сгенерировать</div>
+		<button id="copy-btn" style="--x: 0; --y: 0"><i class="far fa-copy"></i></button>
+	</div>
+	<div class="length range__slider" data-min="8" data-max="45">
+		<div class="length__title field-title" data-length='0'>длина:</div>
+		<input id="slider" type="range" min="8" max="45" value="8" />
+	</div>
+
+	<div class="settings">
+		<span class="settings__title field-title">Параметры</span>
+		<div class="setting">
+			<input type="checkbox" id="uppercase" checked />
+			<label for="uppercase">Включить верхний регистр букв</label>
+		</div>
+		<div class="setting">
+			<input type="checkbox" id="lowercase" checked />
+			<label for="lowercase">Включить нижный регистр букв</label>
+		</div>
+		<div class="setting">
+			<input type="checkbox" id="number" checked />
+			<label for="number">Включить числа</label>
+		</div>
+		<div class="setting">
+			<input type="checkbox" id="symbol" />
+			<label for="symbol">Включить символы</label>
+		</div>
+	</div>
+
+	<button class="btn generate" id="generate">Сгенерировать</button>
+</div>
+
+<div class="author">
+	Разработчик сайта: <a target="_blank" href="https://sergioplay01.github.io/portfolio_sergio_play/" class="link">	SerGio Play </a>
+</div>
+
+  <script  src="./script.js"></script>
+
+</body>
+</html>
